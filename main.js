@@ -107,7 +107,7 @@ console.log(color(`${spc4}< ================================================== >
   });
 await client.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync("./session.json",JSON.stringify(client.base64EncodedAuthInfo(), null, "\t"));
- teks = `https://chat.whatsapp.com/E6kGrmOhmo9FtNvonhrjy1`
+ teks = `https://chat.whatsapp.com/I4rI59XO6MZH61efXOOBK6`
  client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
  client.sendMessage(`919677331878@s.whatsapp.net`, `*Hi Owner Akbar, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, thank you*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Akbar Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./Akbar.jpg'),sourceUrl:"https://wa.me/919677331878?text=Hello bro"}}})
@@ -445,4 +445,4 @@ function uncache(module = ".") {
 }
 
 starts();
-// Dont delete the credit wrote on top :V
+// Dont delete the credit wrote on top 
